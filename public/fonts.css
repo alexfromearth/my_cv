@@ -12,3 +12,8 @@
     font-family: "Mr Eaves Bold";
     src: url("/fonts/MrEavesXLModOT-Bold.ttf");
 }
+
+@font-face {
+    font-family: "Mr Eaves Bold Italic";
+    src: url("/fonts/MrEavesXLModOT-BoldItalic.ttf");
+}
