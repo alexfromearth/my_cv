@@ -1,7 +1,7 @@
 <div class="section-wrapper">
   <div class="separator">
-    <div></div>
-    <div></div>
+    <div class="separator-left"></div>
+    <div class="separator-right"></div>
   </div>
   <div class="content">
     <slot></slot>
@@ -22,13 +22,13 @@
       overflow: hidden;
   }
 
-  .separator > :first-child {
+  .separator-left {
       width: 50px;
       height: 100%;
       background-color: #000000;
   }
 
-  .separator > :last-child {
+  .separator-right {
       height: 100%;
       flex-grow: 1;
       background-color: #BABBBD;

@@ -11,7 +11,7 @@
 <style>
     .brief-info {
         background-color: #1c1c1c;
-        height: 120px;
+        height: 147px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
