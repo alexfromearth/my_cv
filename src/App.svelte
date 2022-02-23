@@ -2,12 +2,14 @@
 	import Board from "./components/Board.svelte";
 	import Section from "./components/Section.svelte";
 	import Title from "./components/Title.svelte";
+	import AdditionalInfo from "./components/AdditionalInfo.svelte";
 </script>
 
 <main>
 	<Board>
 		<div class="info-wrapper">
 			<Title fullName="Aleksey Shirokov" profession="Software Engineer"/>
+			<AdditionalInfo />
 		</div>
 			<Section>
 				Aleksey Shirokov CV!
