@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Mr Eaves Reg";
+    src: url("/assets/fonts/MrEavesXLModOT-Reg.ttf");
+}
+
+@font-face {
+    font-family: "Mr Eaves Reg Italic";
+    src: url("/assets/fonts/MrEavesXLModOT-RegItalic.ttf");
+}
+
+@font-face {
+    font-family: "Mr Eaves Bold";
+    src: url("/assets/fonts/MrEavesXLModOT-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Mr Eaves Bold Italic";
+    src: url("/assets/fonts/MrEavesXLModOT-BoldItalic.ttf");
+}

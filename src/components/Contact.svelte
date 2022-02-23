@@ -21,6 +21,6 @@
   .text {
       font-family: "Mr Eaves Reg Italic", serif;
       font-size: 18px;
-      color: #1c1c1c;
+      color: var(--black);
   }
 </style>

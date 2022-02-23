@@ -10,7 +10,7 @@
 
 <style>
     .brief-info {
-        background-color: #1c1c1c;
+        background-color: var(--black);
         height: 147px;
         display: flex;
         flex-direction: column;
@@ -20,14 +20,14 @@
     }
 
     .full-name {
-        color: #dadada;
+        color: var(--whitesmoke);
         font-size: 35px;
         letter-spacing: 2px;
         font-family: "Mr Eaves Bold", serif;
     }
 
     .profession {
-        color: #636363;
+        color: var(--dimgray);
         margin-top: 5px;
     }
 </style>

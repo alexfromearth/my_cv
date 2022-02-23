@@ -10,8 +10,8 @@
         transform: translate(-50%,-50%);
         height: 1200px;
         width: 900px;
-        background-color: #F2F2F2;
-        border: 1px solid #BABBBD;
+        background-color: var(--whitesmoke);
+        border: 1px solid var(--light-gray);
         border-radius: 3px;
     }
 </style>

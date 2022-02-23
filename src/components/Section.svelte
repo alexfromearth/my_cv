@@ -25,13 +25,13 @@
   .separator-left {
       width: 50px;
       height: 100%;
-      background-color: #000000;
+      background-color: var(--black);
   }
 
   .separator-right {
       height: 100%;
       flex-grow: 1;
-      background-color: #BABBBD;
+      background-color: var(--light-gray);
   }
 
   .content {
