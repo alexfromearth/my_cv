@@ -1,18 +1,15 @@
-<script context="module" lang="ts">
+<script lang="ts">
   import Contact from "./Contact.svelte";
   import Icon from "./Icon/Icon.svelte";
+  import { IData } from "../store";
 
-  const contacts = [
-    {iconName: 'phone', text: '+7(915) 524-40-61', src: 'tel:+79155244061'},
-    {iconName: 'email', text: 'shirokovaloff@gmail.com', src: 'mailto:shirokovaloff@gmail.com&body=Привет?subject=vacancy'},
-    {iconName: 'linkedIn', text: '@alexey-shirokov-4a79921b4', src: 'https://www.linkedin.com/in/alexey-shirokov-4a79921b4'},
-    {iconName: 'github', text: '@alexfromearth', src: 'https://github.com/alexfromearth'},
-  ]
+  export let contacts: IData['contacts'];
+  export let addressInfo: IData['addressInfo'];
 </script>
 
 <div class="wrapper">
   <div class="address">
-    Russia, Moscow
+    {addressInfo.country}, {addressInfo.city}
   </div>
   <div class="contacts">
     {#each contacts as { iconName, text, src }}

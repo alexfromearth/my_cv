@@ -3,17 +3,34 @@
 	import Section from "./components/Section.svelte";
 	import Title from "./components/Title.svelte";
 	import AdditionalInfo from "./components/AdditionalInfo.svelte";
+	import { IData, storeData } from "./store";
+	import TextGroup from "./components/TextGroup.svelte";
+
+	let data: IData;
+
+	storeData.subscribe(value => {
+		data = value;
+	});
 </script>
 
 <main>
 	<Board>
 		<div class="info-wrapper">
-			<Title fullName="Aleksey Shirokov" profession="Software Engineer"/>
-			<AdditionalInfo />
+			<Title fullName={data.fullName} profession={data.profession}/>
+			<AdditionalInfo contacts={data.contacts} addressInfo={data.addressInfo}/>
 		</div>
-			<Section>
-				Aleksey Shirokov CV!
+		<div class="sections">
+			<Section title='WORK EXPERIENCE'>
+				{#each data.workExp as { period, description, achivements }}
+					<TextGroup period={period} description={description} achivements={achivements}/>
+				{/each}
 			</Section>
+			<Section title="EDUCATION">
+				{#each data.education as {period, description }}
+					<TextGroup period={period} description={description}/>
+				{/each}
+			</Section>
+		</div>
 	</Board>
 </main>
 
@@ -34,5 +51,4 @@
 		justify-content: flex-start;
 		align-items: center;
 	}
-
 </style>

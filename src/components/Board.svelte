@@ -8,7 +8,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        height: 1200px;
         width: 900px;
         background-color: var(--whitesmoke);
         border: 1px solid var(--light-gray);

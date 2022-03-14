@@ -1,10 +1,17 @@
+<script lang="ts">
+  export let title: string;
+</script>
+
 <div class="section-wrapper">
   <div class="separator">
     <div class="separator-left"></div>
     <div class="separator-right"></div>
   </div>
   <div class="content">
-    <slot></slot>
+    <div class="title">{title}</div>
+    <div class="main">
+      <slot></slot>
+    </div>
   </div>
 </div>
 
@@ -12,6 +19,7 @@
   .section-wrapper {
       margin-left: 50px;
       margin-right: 50px;
+      margin-bottom: 55px;
   }
 
   .separator {
@@ -36,5 +44,19 @@
 
   .content {
       margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .title {
+      font-size: 32px;
+      width: 235px;
+      letter-spacing: 3px;
+      font-family: "Mr Eaves Bold", serif;
+  }
+
+  .main {
+      width: 570px;
+      flex-grow: 1;
   }
 </style>
