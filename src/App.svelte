@@ -21,8 +21,7 @@
 			<AdditionalInfo contacts={data.contacts} addressInfo={data.addressInfo}/>
 		</div>
 		<div>
-			<Section title='SKILLS'>
-			</Section>
+			<div class="title">SKILLS</div>
 			<div class="tags">
 				<div class="tags-list">
 					{#each data.skills as skill}
@@ -54,8 +53,17 @@
 		font-family: "Mr Eaves Reg", serif
 	}
 
+	.title {
+		margin-left: 50px;
+		margin-bottom: 20px;
+		font-size: 32px;
+		width: 235px;
+		letter-spacing: 3px;
+		font-family: "Mr Eaves Bold", serif;
+	}
+
 	.info-wrapper {
-		height: 280px;
+		height: 200px;
 		width: 100%;
 		display: flex;
 		justify-content: flex-start;
