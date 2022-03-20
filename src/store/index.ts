@@ -99,7 +99,16 @@ const initialData: IData = {
     }
   ],
   skills: [
-    'Typescript', 'React', 'Redux', 'RxJs'
+    'Typescript',
+    'JavaScript',
+    'React',
+    'Next.js',
+    'Svelte',
+    'Redux',
+    'RxJs',
+    'Cypress',
+    'Webpack',
+    'Node.JS',
   ]
 }
 

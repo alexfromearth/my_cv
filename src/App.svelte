@@ -5,6 +5,7 @@
 	import AdditionalInfo from "./components/AdditionalInfo.svelte";
 	import { IData, storeData } from "./store";
 	import TextGroup from "./components/TextGroup.svelte";
+	import Tag from "./components/Tag.svelte";
 
 	let data: IData;
 
@@ -20,6 +21,15 @@
 			<AdditionalInfo contacts={data.contacts} addressInfo={data.addressInfo}/>
 		</div>
 		<div>
+			<Section title='SKILLS'>
+			</Section>
+			<div class="tags">
+				<div class="tags-list">
+					{#each data.skills as skill}
+						<Tag text={skill}/>
+					{/each}
+				</div>
+			</div>
 			<Section title='WORK EXPERIENCE'>
 				{#each data.workExp as { period, title, description, achivements }}
 					<TextGroup title={title} period={period} description={description} achivements={achivements}/>
@@ -50,5 +60,18 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+	}
+
+	.tags {
+		display: flex;
+		justify-content: center;
+	}
+
+	.tags-list {
+		width: 500px;
+		margin-bottom: 45px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 </style>
