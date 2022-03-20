@@ -61,7 +61,7 @@ const initialData: IData = {
     },
     {
       period: {
-        from: 'October 2020',
+        from: 'September 2020',
         to: 'February 2021',
       },
       title: 'Frontend Engineer @ MTS',
@@ -76,7 +76,7 @@ const initialData: IData = {
     {
       period: {
         from: 'July 2018',
-        to: 'March 2020',
+        to: 'August 2020',
       },
       title: 'Full-Stack Engineer @ Self Employed',
       description: 'Developed projects for customers using Javascript, React, React Native, Node.js, Express.js, MongoDB, HTML, CSS stack.',

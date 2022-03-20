@@ -39,7 +39,7 @@
   }
 
   .period {
-      width: 120px;
+      width: 125px;
       font-family: "Mr Eaves Bold", serif;
       font-size: 18px;
   }
