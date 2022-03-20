@@ -16,8 +16,9 @@ export interface IPeriodBlock {
     from: string;
     to: string;
   };
-  description: string;
-  achivements: string[];
+  title: string;
+  description?: string;
+  achivements?: string[];
 }
 
 export interface IData {
@@ -34,11 +35,11 @@ const initialData: IData = {
   fullName: 'Aleksey Shirokov',
   profession: 'Software Developer',
   addressInfo: {
-    country: 'Russia',
-    city: 'Moscow'
+    country: 'Georgia',
+    city: 'Tbilisi'
   },
   contacts: [
-    {iconName: 'phone', text: '+7(915) 524-40-61', src: 'tel:+79155244061'},
+    {iconName: 'phone', text: '+995 511-104-420', src: 'tel:+995511104420'},
     {iconName: 'email', text: 'shirokovaloff@gmail.com', src: 'mailto:shirokovaloff@gmail.com&body=Привет?subject=vacancy'},
     {iconName: 'linkedIn', text: '@alexey-shirokov-4a79921b4', src: 'https://www.linkedin.com/in/alexey-shirokov-4a79921b4'},
     {iconName: 'github', text: '@alexfromearth', src: 'https://github.com/alexfromearth'},
@@ -49,6 +50,7 @@ const initialData: IData = {
         from: 'February 2021',
         to: 'Present',
       },
+      title: 'Frontend Engineer @ Wink TV',
       description: 'Development of Wink media service for SmartTV(Tizen, WebOS). Code review. Design review. Bundling. CI/CD. Unit/integration/E2E testing. TDD.',
       achivements: [
         'Developed complex UI',
@@ -62,6 +64,7 @@ const initialData: IData = {
         from: 'October 2020',
         to: 'February 2021',
       },
+      title: 'Frontend Engineer @ MTS',
       description: 'Been working on:',
       achivements: [
        "Reusable micro-frontends using Typescript, React.",
@@ -75,6 +78,7 @@ const initialData: IData = {
         from: 'July 2018',
         to: 'March 2020',
       },
+      title: 'Full-Stack Engineer @ Self Employed',
       description: 'Developed projects for customers using Javascript, React, React Native, Node.js, Express.js, MongoDB, HTML, CSS stack.',
       achivements: [
         "Development of UI using React, React Native.",
@@ -87,12 +91,11 @@ const initialData: IData = {
   ],
   education: [
     {
+      title: 'Belgorod State Technological University. V.G. Shukhov',
       period: {
         from: 'September 2012',
         to: 'July 2018',
       },
-      description: 'Belgorod State Technological University. V.G. Shukhov',
-      achivements: []
     }
   ],
   skills: [

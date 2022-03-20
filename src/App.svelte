@@ -21,13 +21,13 @@
 		</div>
 		<div class="sections">
 			<Section title='WORK EXPERIENCE'>
-				{#each data.workExp as { period, description, achivements }}
-					<TextGroup period={period} description={description} achivements={achivements}/>
+				{#each data.workExp as { period, title, description, achivements }}
+					<TextGroup title={title} period={period} description={description} achivements={achivements}/>
 				{/each}
 			</Section>
 			<Section title="EDUCATION">
-				{#each data.education as {period, description }}
-					<TextGroup period={period} description={description}/>
+				{#each data.education as {period, title, description }}
+					<TextGroup title={title} period={period} description={description}/>
 				{/each}
 			</Section>
 		</div>
