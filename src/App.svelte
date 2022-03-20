@@ -19,7 +19,7 @@
 			<Title fullName={data.fullName} profession={data.profession}/>
 			<AdditionalInfo contacts={data.contacts} addressInfo={data.addressInfo}/>
 		</div>
-		<div class="sections">
+		<div>
 			<Section title='WORK EXPERIENCE'>
 				{#each data.workExp as { period, title, description, achivements }}
 					<TextGroup title={title} period={period} description={description} achivements={achivements}/>
