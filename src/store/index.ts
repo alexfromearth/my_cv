@@ -33,7 +33,7 @@ export interface IData {
 
 const initialData: IData = {
   fullName: 'Aleksey Shirokov',
-  profession: 'Software Developer',
+  profession: 'Software Developer ● Typescript ● React ● Svelte',
   addressInfo: {
     country: 'Georgia',
     city: 'Tbilisi'
