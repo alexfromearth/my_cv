@@ -46,10 +46,13 @@
 <style>
 
 	main {
-		position: relative;
-		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background-image: url('/assets/background.jpg');
 		background-repeat: no-repeat;
+		background-size: cover;
+		min-width: 1500px;
 		font-family: "Mr Eaves Reg", serif
 	}
 

@@ -39,7 +39,7 @@ const initialData: IData = {
     city: 'Tbilisi'
   },
   contacts: [
-    {iconName: 'phone', text: '+995 511-104-420', src: 'tel:+995511104420'},
+    {iconName: 'telegram', text: '@re1ativity', src: 'https://t.me/re1ativity'},
     {iconName: 'email', text: 'shirokovaloff@gmail.com', src: 'mailto:shirokovaloff@gmail.com&body=Привет?subject=vacancy'},
     {iconName: 'linkedIn', text: '@alexey-shirokov-4a79921b4', src: 'https://www.linkedin.com/in/alexey-shirokov-4a79921b4'},
     {iconName: 'github', text: '@alexfromearth', src: 'https://github.com/alexfromearth'},
