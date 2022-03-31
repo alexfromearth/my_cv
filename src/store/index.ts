@@ -41,7 +41,7 @@ const initialData: IData = {
   contacts: [
     {iconName: 'telegram', text: '@re1ativity', src: 'https://t.me/re1ativity'},
     {iconName: 'email', text: 'shirokovaloff@gmail.com', src: 'mailto:shirokovaloff@gmail.com&body=Привет?subject=vacancy'},
-    {iconName: 'linkedIn', text: '@alexey-shirokov-4a79921b4', src: 'https://www.linkedin.com/in/alexey-shirokov-4a79921b4'},
+    {iconName: 'linkedIn', text: '@alexfromearth', src: 'https://www.linkedin.com/in/alexey-shirokov-4a79921b4'},
     {iconName: 'github', text: '@alexfromearth', src: 'https://github.com/alexfromearth'},
   ],
   workExp: [
