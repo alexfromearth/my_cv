@@ -115,6 +115,7 @@ const initialData: IData = {
     'Svelte',
     'Redux',
     'RxJs',
+    'React Query',
     'Cypress',
     'Webpack',
     'Node.JS',

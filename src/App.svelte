@@ -79,7 +79,7 @@
 	}
 
 	.tags-list {
-		width: 500px;
+		width: 550px;
 		margin-bottom: 45px;
 		display: flex;
 		flex-wrap: wrap;
