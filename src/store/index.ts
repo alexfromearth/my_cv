@@ -35,8 +35,8 @@ const initialData: IData = {
   fullName: 'Aleksey Shirokov',
   profession: 'Software Developer ● Typescript ● React ● Svelte',
   addressInfo: {
-    country: 'Georgia',
-    city: 'Tbilisi'
+    country: 'Montenegro',
+    city: 'Bar'
   },
   contacts: [
     {iconName: 'telegram', text: '@re1ativity', src: 'https://t.me/re1ativity'},
@@ -47,8 +47,17 @@ const initialData: IData = {
   workExp: [
     {
       period: {
-        from: 'February 2021',
+        from: 'May 2022',
         to: 'Present',
+      },
+      title: 'Frontend Engineer @ Artec3d',
+      description: '',
+      achivements: []
+    },
+    {
+      period: {
+        from: 'February 2021',
+        to: 'May 2022',
       },
       title: 'Frontend Engineer @ Wink TV',
       description: 'Development of Wink media service for SmartTV(Tizen, WebOS). Code review. Design review. Bundling. CI/CD. Unit/integration/E2E testing. TDD.',
